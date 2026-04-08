@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konjor | Guts to Build. Grit to Scale.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(90deg, #FACC15, #F97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-konjor-yellow { background-color: #FACC15; }
+        .bg-konjor-green { background-color: #22C55E; }
+        .bg-konjor-orange { background-color: #F97316; }
+        .hover-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+    <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold tracking-tighter italic uppercase">Konjor</div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-slate-500">
+            <a href="#philosophy" class="hover:text-black transition">Philosophy</a>
+            <a href="#ventures" class="hover:text-black transition">Ventures</a>
+            <a href="#privacy" class="hover:text-black transition text-xs opacity-60">Privacy</a>
+        </div>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-8 py-24 md:py-32 text-center">
+        <h1 class="text-6xl md:text-8xl font-bold tracking-tight mb-6">
+            Guts to Build. <br/>
+            <span class="gradient-text">Grit to Scale.</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+            Konjor is an engineering laboratory building high-integrity Tech solutions.
+        </p>
+        <div class="mt-12">
+            <a href="#ventures" class="bg-konjor-yellow text-black px-10 py-4 rounded-full font-bold hover:bg-yellow-400 transition inline-block shadow-md">
+                Explore Ventures
+            </a>
+        </div>
+    </header>
+
+    <hr class="border-slate-100" />
+
+    <section id="philosophy" class="max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row items-center gap-16">
+        <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold mb-6">Rooted in <span class="text-konjor-orange italic uppercase">Konjo</span></h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                Derived from the Japanese principle of unyielding determination, Konjor operates on the belief that technology should be a quiet enabler, not a noisy distraction.
+            </p>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                We build for those who lead with grit and act with purpose. Our mission is to scale solutions that are <strong>good for humankind and the planet by leveraging technology and purpose-driven engineering.</strong>
+            </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="w-64 h-64 bg-konjor-green rounded-3xl rotate-6 flex items-center justify-center shadow-2xl">
+                <div class="w-48 h-48 bg-white/20 rounded-2xl -rotate-6 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white font-bold text-4xl">根性</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ventures" class="bg-slate-50 py-24">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-3xl font-bold mb-16 text-center">Current Ventures</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <a href="https://gorb.world" target="_blank" class="bg-white p-10 rounded-3xl hover-lift border border-slate-100 block group relative overflow-hidden">
+                    <div class="flex justify-between items-start mb-8">
+                        <img src="media/images/gorb-logo.png" alt="GORB Logo" class="h-16 w-auto object-contain">
+                        <span class="text-konjor-orange text-2xl group-hover:translate-x-2 transition-transform">→</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-slate-800">GORB</h3>
+                    <p class="text-slate-500 mb-6">A privacy-first coordination engine for real-world meetups. Moving people from screens to scenes through "Match & Reveal" logic.</p>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-konjor-green animate-pulse"></span>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-konjor-orange transition">Live at gorb.world</span>
+                    </div>
+                </a>
+
+                <div class="bg-white p-10 rounded-3xl border border-slate-100 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="w-16 h-16 bg-konjor-green rounded-xl mb-8 flex items-center justify-center text-white font-bold shadow-inner text-2xl">K</div>
+                        <h3 class="text-2xl font-bold mb-4 text-slate-800">Future Labs</h3>
+                        <p class="text-slate-500 mb-6">Building low-friction digital infrastructure and sustainable architecture for global communications.</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-slate-300"></span>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Active Development</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy" class="max-w-4xl mx-auto px-8 py-24 border-t border-slate-100">
+        <h2 class="text-2xl font-bold mb-8">Privacy Policy</h2>
+        <div class="text-sm text-slate-500 space-y-4 leading-relaxed">
+            <p><strong>Effective Date: April 6, 2026</strong></p>
+            <p>Konjor LLC ("Konjor") is committed to data minimization. We only collect essential metadata required to facilitate secure connections. We do not sell, license, or monetize individual user data.</p>
+            <p><strong>Compliance :</strong> For inquiries regarding our global data handling or privacy standards, please contact <strong>talk@konjor.com</strong>.</p>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-slate-50 px-8 py-16 text-center">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-xl font-bold italic mb-6">KONJOR</div>
+            <p class="text-slate-400 text-sm mb-2 font-medium">Konjor LLC | Wyoming, USA</p>
+            <p class="text-slate-400 text-xs mb-8 font-mono">(307) 309-2500 | talk@konjor.com</p>
+            <div class="text-[10px] text-slate-300 uppercase tracking-[0.2em] max-w-md mx-auto leading-relaxed">
+                © 2026 Konjor LLC. All Rights Reserved. <br/> 30 N Gould St #60412, Sheridan, WY, 82801, USA
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
