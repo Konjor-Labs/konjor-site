@@ -16,6 +16,7 @@
         .bg-konjor-yellow { background-color: #FACC15; }
         .bg-konjor-green { background-color: #22C55E; }
         .bg-konjor-orange { background-color: #F97316; }
+        .text-konjor-orange { color: #F97316; }
         .hover-lift { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
         .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
     </style>
@@ -25,6 +26,7 @@
     <nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
         <div class="text-2xl font-bold tracking-tighter italic uppercase">Konjor</div>
         <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-slate-500">
+            <a href="#origin" class="hover:text-black transition">Origin</a>
             <a href="#philosophy" class="hover:text-black transition">Philosophy</a>
             <a href="#ventures" class="hover:text-black transition">Ventures</a>
             <a href="#privacy" class="hover:text-black transition text-xs opacity-60">Privacy</a>
@@ -37,7 +39,7 @@
             <span class="gradient-text">Grit to Scale.</span>
         </h1>
         <p class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
-            Konjor is an engineering laboratory building high-integrity Tech solutions.
+            Konjor is an engineering lab that turns stubborn ideas into high-integrity solutions.
         </p>
         <div class="mt-12">
             <a href="#ventures" class="bg-konjor-yellow text-black px-10 py-4 rounded-full font-bold hover:bg-yellow-400 transition inline-block shadow-md">
@@ -45,6 +47,32 @@
             </a>
         </div>
     </header>
+
+    <hr class="border-slate-100" />
+
+    <section id="origin" class="max-w-7xl mx-auto px-8 py-24 flex flex-col md:flex-row items-center gap-12 md:gap-16">
+        <div class="md:w-1/2 w-full">
+            <img
+                src="media/images/king-bruce-spider.webp"
+                alt="A warrior in a cave watching a spider — grit and persistence"
+                class="w-full rounded-3xl shadow-xl object-cover aspect-[4/5] md:aspect-square"
+                width="800"
+                height="800"
+            />
+        </div>
+        <div class="md:w-1/2">
+            <h2 class="text-4xl font-bold mb-6">Why Konjor</h2>
+            <div class="text-lg text-slate-600 leading-relaxed space-y-5">
+                <p>The story of King Bruce and the spider has stayed with me since I first read it.</p>
+                <p>This isn’t my first venture, or my first set of ideas. I’ve tried a few before — some didn’t last long; some did all right. Mechanics to electronics to robotics to media: the urge to build something that works has always driven me. Then life happens, and you find yourself fighting a thousand battles at once. And fight we do.</p>
+                <p>A lot of us have been there — or are there now — watching things that matter crumble, and still pushing through. If you’re in the middle of that, I hope you keep the strength, the will, and the grit — to stay up, build, fight, and be victorious.</p>
+                <p>
+                    Konjor is my next gritty attempt to build ideas that have been brewing in my head for years — some from my teens, some later.
+                    <a href="#ventures" class="text-konjor-orange font-medium hover:underline ml-1">See what’s in the works below.</a>
+                </p>
+            </div>
+        </div>
+    </section>
 
     <hr class="border-slate-100" />
 
@@ -59,7 +87,7 @@
             </p>
         </div>
         <div class="md:w-1/2 flex justify-center">
-            <div class="w-64 h-64 bg-konjor-green rounded-3xl rotate-6 flex items-center justify-center shadow-2xl">
+            <div class="w-64 h-64 bg-konjor-orange rounded-3xl rotate-6 flex items-center justify-center shadow-2xl">
                 <div class="w-48 h-48 bg-white/20 rounded-2xl -rotate-6 backdrop-blur-sm border border-white/30 flex items-center justify-center text-white font-bold text-4xl">根性</div>
             </div>
         </div>
